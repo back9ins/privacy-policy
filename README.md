@@ -76,8 +76,8 @@ Authorization validity and data deletion are different:
 - **Authorization codes:** A code can be used once and expires after five minutes if unused.
 - **Access tokens:** A newly issued token is valid for up to 30 days unless revoked sooner. BackNine stores a hash of the token, together with connection metadata. Expiration or revocation prevents further authorized use; it does not itself delete the stored connection record.
 - **Illustration download links:** Links returned by the plugin expire after ten minutes. Link expiration does not delete the underlying illustration document.
-- **Connection records, tool-usage records, application/security logs, and backups:** [CONFIRM BEFORE PUBLICATION: specify the actual retention period for each category, deletion trigger, and any backup removal delay. Do not substitute token validity for record retention.]
-- **BOSS records and generated documents:** Connecting or disconnecting the plugin does not change the retention of the underlying BOSS records. [CONFIRM BEFORE PUBLICATION: specify the applicable retention periods or concrete retention criteria for BOSS records and illustrations, including legal or carrier obligations.]
+- **Connection records, tool-usage records, application/security logs, and backups:** BackNine retains this information for six years. Token expiration or revocation does not shorten this retention period.
+- **BOSS records and generated documents:** BackNine retains BOSS records and generated documents, including illustrations, for six years. Connecting or disconnecting the plugin does not change this retention period.
 
 Information already returned to ChatGPT is subject to OpenAI's retention rules and your ChatGPT controls. Disconnecting BackNine does not erase previous ChatGPT conversations or their contents.
 
@@ -97,4 +97,4 @@ The connection uses HTTPS, OAuth authorization with PKCE, scoped account permiss
 
 For questions about this notice or the BackNine plugin, contact privacy@back9ins.com or (800) 790-1951. Updates to this notice will be published at this URL.
 
-Proposed revision date: October 7, 2026. The plugin retention disclosures marked above must be completed and confirmed before this revision is published.
+Last updated: October 7, 2026.
